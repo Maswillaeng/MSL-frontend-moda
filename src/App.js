@@ -11,6 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className='App'>
+        <h1 className='bg-pink-400'>hi</h1>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/signup" element={<Signup/>}/>
