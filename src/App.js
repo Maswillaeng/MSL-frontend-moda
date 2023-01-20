@@ -1,24 +1,24 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from  "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Board from "./pages/Board";
 import BoardCreate from "./pages/BoardCreate";
 import BoardDetail from "./pages/BoardDetail";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='App'>
-        <h1 className='bg-pink-400'>hi</h1>
+      <div className="App">
+        <h1 className="bg-pink-400">hi</h1>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/signup" element={<Signup/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/board" element={<Board/>}/>
-          <Route path="/create" element={<BoardCreate/>}/>
-          <Route path="/board/:boardId" element={<BoardDetail/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/board" element={<Board />} />
+          <Route path="/create" element={<BoardCreate />} />
+          <Route path="/board/:boardId" element={<BoardDetail />} />
         </Routes>
       </div>
     </BrowserRouter>
