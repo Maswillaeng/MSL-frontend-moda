@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
     colors: {
-      'main' : '#AA233C',
-      transparent: 'transparent',
-      current: 'currentColor',
+      main: "#AA233C",
+      transparent: "transparent",
+      current: "currentColor",
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
@@ -17,7 +17,5 @@ module.exports = {
       yellow: colors.yellow,
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require("@tailwindcss/forms")],
 };
