@@ -16,6 +16,13 @@ module.exports = {
       indigo: colors.indigo,
       yellow: colors.yellow,
     },
+    fontSize: {
+      content: "1.125rem",
+    },
+    fontWeight: {
+      medium: "500",
+      semiBold: "600",
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
