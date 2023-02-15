@@ -27,7 +27,7 @@ export default function Board() {
         <button
           type="button"
           onClick={toCreatePage}
-          className="bg-main h-10 w-[100px] text-white rounded-md"
+          className="bg-main h-10 w-[100px] text-white rounded-md cursor-pointer"
         >
           글 작성
         </button>

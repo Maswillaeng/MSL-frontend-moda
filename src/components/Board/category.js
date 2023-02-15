@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Category = () => {
   const [ category ] = useState([
     "전체",
+    "인기 게시판",
     "레시피",
     "칵테일 추천",
     "안주 추천",
