@@ -7,6 +7,7 @@ module.exports = {
     extend: {},
     colors: {
       main: "#AA233C",
+      buttonHover: "#CC3652",
       transparent: "transparent",
       current: "currentColor",
       black: colors.black,
@@ -18,10 +19,15 @@ module.exports = {
     },
     fontSize: {
       content: "1.125rem",
+      subcontent: "0.875rem",
     },
     fontWeight: {
       medium: "500",
       semiBold: "600",
+      bold: "700",
+    },
+    boxShadow: {
+      modal: "0 2px 12px 0px rgb(0 0 0 / 9%)",
     },
   },
   plugins: [require("@tailwindcss/forms")],
