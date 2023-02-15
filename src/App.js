@@ -10,14 +10,16 @@ import Search from "./pages/Search";
 import Chat from "./pages/Chat";
 import "./App.css";
 import Layout from "./Layout";
+import ModalContainer from "./components/UI/ModalContainer";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ModalContainer />
         <Routes>
           <Route element={<Layout />}>
-            <Route index element={<Home />} />  
+            <Route index element={<Home />} />
             <Route path="/userpage/:userId" element={<UserPage />} />
             <Route path="/board" element={<Board />} />
             <Route path="/create" element={<BoardCreate />} />
