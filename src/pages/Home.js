@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
 
-const Home = () => {
+const Home = ({card_data}) => {
+  
   return(
     <div>
-      <Header />
+    
     </div>
   )
 }

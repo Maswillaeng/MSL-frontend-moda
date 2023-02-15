@@ -6,10 +6,14 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function CardItem({card_data}) {
   const navigate = useNavigate()
-  const { post_id, img, title, content, thumbCount, readCount, commentCount, user, user_img} = card_data;
+  const { postId, img, title, content, thumbCount, readCount, commentCount, nickname, user_img, userId} = card_data;
 
   const toDetailPage = () => {
-    navigate(`/board/${post_id}`)
+    navigate(`/board/${postId}`)
+  }
+
+  const toUserPage = () => {
+    navigate(`/userpage/${userId}`)
   }
 
 
@@ -22,7 +26,7 @@ function CardItem({card_data}) {
           src={img}
           alt="Card_image"
         />
-        <div className='h-[130px] p-4' onClick={toDetailPage}>
+        <div className='h-[130px] p-4 cursor-pointer' onClick={toDetailPage}>
           <h1 className='text-xl font-bold mb-2' >
             {title}
           </h1>
@@ -37,14 +41,14 @@ function CardItem({card_data}) {
           </div>
         </div>
         <div className='p-4 flex flex-wrap items-center justify-between'>
-          <div className='flex flex-wrap'>
+          <div className='flex flex-wrap cursor-pointer' onClick={toUserPage}>
             <img 
               className='w-8 h-8 rounded-full'
               src="images/apeach.png"
               alt="user_img"
             />
             <h2 className='p-1 mx-1'>
-              {user}
+              {nickname}
             </h2>
           </div>
           <div className='flex justify-'>
