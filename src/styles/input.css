@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply rounded-md px-5 py-2 bg-main text-white hover:cursor-pointer hover:bg-buttonHover;
+}
