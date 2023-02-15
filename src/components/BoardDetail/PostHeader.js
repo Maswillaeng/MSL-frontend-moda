@@ -24,7 +24,7 @@ const PostHeader = (props) => {
       </Link>
 
       <div className="min-w-[60%] ml-4 flex flex-col justify-center">
-        <div className="font-bold">{props.user}</div>
+        <div className="font-bold">{props.nickname}</div>
         <div className="text-gray-400 text-subcontent">
           {`${postCreateYear}년 ${postCreateMonth + 1}월 ${postCreateDay}일`}
         </div>
