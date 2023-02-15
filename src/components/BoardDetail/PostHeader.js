@@ -15,7 +15,7 @@ const PostHeader = (props) => {
       </Link>
 
       <div className="min-w-[70%]">
-        <div className="font-bold">{props.name}</div>
+        <div className="font-bold">{props.user}</div>
         <div>{props.createDate}</div>
       </div>
       <div className="min-w-[20%] flex justify-between items-center">

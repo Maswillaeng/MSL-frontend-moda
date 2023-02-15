@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Category from "../components/Board/category";
+import CardList from "../components/Board/CardList";
 
 export default function Board() {
   const navigate = useNavigate();
@@ -21,10 +22,11 @@ export default function Board() {
           글 작성
         </button>
       </div>
-      <div className="mx-auto">
+      <div className="container px-5 py-10 mx-auto">
         {/* 카테고리 */}
         <Category />
         {/* 게시판 */}
+        <CardList />
       </div>
     </div>
   );
