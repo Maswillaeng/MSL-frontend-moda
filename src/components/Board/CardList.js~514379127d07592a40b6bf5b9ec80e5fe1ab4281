@@ -10,7 +10,7 @@ const CardList = () => {
   return (
     <div className="flex flex-wrap">
       {boardList.map(post => (
-        <CardItem key={post.post_id} card_data={post}/>
+        <CardItem key={post.postId} card_data={post}/>
       ))}
     </div>
   )
