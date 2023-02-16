@@ -5,7 +5,7 @@ const UserDummyData = [
     "email" : "asdf1234@naver.com",
     "phoneNumber": "010-111-1111",
     "userImage" : "public/images/apeach.png",
-    "introduction": "안녕하세요."
+    "introduction": "안녕하세요. 잘 부탁드립니다."
   },
   {
     "userId" : 2,
