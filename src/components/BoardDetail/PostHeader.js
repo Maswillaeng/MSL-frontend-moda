@@ -13,6 +13,12 @@ const PostHeader = (props) => {
   const postCreateMonth = formattedPostCreateDate.get("M");
   const postCreateDay = formattedPostCreateDate.get("D");
 
+  const urlCopyHandler = () => {
+    const url = document.location.href;
+    console.log(url);
+    navigator.clipboard.writeText(url);
+  };
+
   return (
     <div className="w-auto flex justify-between">
       <Link to={"/"}>
@@ -34,7 +40,9 @@ const PostHeader = (props) => {
           <FontAwesomeIcon icon={faCommentDots} className="mr-3 " />
           댓글 {props.commentList.length}
         </div>
-        <div>URL 복사</div>
+        <div className="hover:cursor-pointer" onClick={urlCopyHandler}>
+          URL 복사
+        </div>
         <FontAwesomeIcon
           className="text-gray-400"
           icon={faEllipsisVertical}
