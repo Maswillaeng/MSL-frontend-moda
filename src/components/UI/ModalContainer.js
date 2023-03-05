@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ModalStateContext } from "../../context/modal-context";
 import NeedLoginModal from "./NeedLoginModal";
 import useModal from "../../hooks/useModal";
+import UserUpdateModal from "./UserUpdateModal";
 
 export const ModalTemplate = (props) => {
   return (
@@ -24,6 +25,7 @@ const BackDrop = (props) => {
 
 const MODAL_COMPONENTS = {
   needLogin: NeedLoginModal,
+  userUpdate: UserUpdateModal,
 };
 
 const ModalContainer = () => {
