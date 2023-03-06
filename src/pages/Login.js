@@ -11,7 +11,7 @@ const Login = () => {
     const regExp = /^([a-zA-Z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/
     console.log('이메일 유효성 검사', regExp.test(e.target.value))
   }
-
+  
   const checkPassword = (e) => {
     const regExpPw = /^(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{6,20}$/
     console.log('비밀번호 유효성 검사', regExpPw.test(e.target.value))
