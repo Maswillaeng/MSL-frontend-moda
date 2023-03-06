@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Board from "./pages/Board";
@@ -19,9 +18,9 @@ function App() {
         <ModalContainer />
         <Routes>
           <Route element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Board />} />
             <Route path="/userpage/:userId" element={<UserPage />} />
-            <Route path="/board" element={<Board />} />
+            {/* <Route path="/board" element={<Board />} /> */}
             <Route path="/create" element={<BoardCreate />} />
             <Route path="/board/:boardId" element={<BoardDetail />} />
             <Route path="/search" element={<Search />} />
