@@ -52,7 +52,7 @@ function CardItem({ card_data }) {
             />
             <h2 className="p-1 mx-1">{nickname}</h2>
           </div>
-          <div className="flex justify-">
+          <div className="flex">
             <span className="mx-2">
               <FontAwesomeIcon icon={faEye} className="mr-2" />
               {readCount}
