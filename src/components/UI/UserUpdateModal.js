@@ -5,6 +5,20 @@ const UserUpdateModal = (props) => {
   const [ img, setImg ] = useState("https://picsum.photos/id/29/720/400/")
   const fileInput = useRef(null)
 
+  // 이미지 미리보기
+  const ImageOnChange = (e) => {
+    e.preventDefault();
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    
+    return new Promise((resolve) => {
+      reader.onload = () => {
+        setImg(reader.result)
+        resolve();
+      }
+    })
+  }
   return (
     <ModalTemplate>
       <div className="p-2">
@@ -20,6 +34,7 @@ const UserUpdateModal = (props) => {
               className="hidden"
               type="file"
               accept="image/*"
+              onChange={e => ImageOnChange(e)}
               ref={fileInput}
             />
             <button className="button w-[150px] mb-3 mt-6" onClick={() =>{fileInput.current.click()}}>
