@@ -1,10 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem('id') === null) {
+      console.log("로그인 안됨")
+    } else {
+      setIsLoggedIn(true)
+      console.log("로그인 성공")
+    }
+  }, [])
+
+  // localStorage에 있는 id로 사용자 정보 불러오기
 
   // 로그아웃 구현
+  const onClickLogout = () => {
+    localStorage.clear()
+    window.location.replace('http://localhost:3000')
+  }
 
   return (
     <div className='relative bg-white'>
@@ -15,10 +30,7 @@ const Header = () => {
           </Link>
         </div>
         {isLoggedIn ? (
-          <div >
-            <Link to={"/board"} >
-              게시판
-            </Link>
+          <div className="space-x-5">
             <Link to={"/search"}>
               검색
             </Link>
@@ -28,12 +40,12 @@ const Header = () => {
             <Link to={"/chat"}>
               메세지
             </Link>
-            <Link >
+            <Link onClick={onClickLogout}>
               로그아웃
             </Link>
           </div>
         ) : (
-          <div className="space-x-6">
+          <div className="space-x-5">
             <Link to={"/board"}>
               게시판
             </Link>
