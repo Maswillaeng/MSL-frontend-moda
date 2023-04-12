@@ -29,7 +29,7 @@ const Login = () => {
     console.log(email, password)
     localStorage.clear()
     localStorage.setItem('id', email)
-    localStorage.setItem('pw', password)
+    // localStorage.setItem('pw', password)
     window.location.replace('http://localhost:3000')
   }
 
