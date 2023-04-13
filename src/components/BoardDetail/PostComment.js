@@ -13,7 +13,7 @@ const PostComment = (props) => {
   const commentArea = useRef();
 
   const submitComment = (e) => {
-    if (userName.length === 0) {
+    if (userName.length !== 0) {
       // 추후 서버로부터 받아온 정보로 로그인 여부를 알 수 있게되면 userName의 length 검사가 아닌 토큰 존재 여부 로직 구현 필요
       openModal({ type: "needLogin" });
       return;
@@ -46,7 +46,7 @@ const PostComment = (props) => {
   };
 
   return (
-    <div className="mt-12">
+    <div className="my-20">
       <h4 className="my-6 font-semiBold">
         {props.commentList.length}개의 댓글
       </h4>
