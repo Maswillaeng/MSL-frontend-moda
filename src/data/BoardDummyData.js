@@ -236,7 +236,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 1,
+    postId: 19,
     img: "https://picsum.photos/720/400",
     category: "레시피",
     title: "1번",
@@ -251,7 +251,7 @@ const boardList = [
     thumbCount: 1,
   },
   {
-    postId: 2,
+    postId: 20,
     img: "https://picsum.photos/id/16/720/400/",
     category: "칵테일 추천",
     title: "2번",
@@ -264,7 +264,7 @@ const boardList = [
     thumbCount: 3,
   },
   {
-    postId: 3,
+    postId: 21,
     img: "https://picsum.photos/id/25/720/400/",
     category: "자유 게시판",
     title: "3번",
@@ -277,7 +277,7 @@ const boardList = [
     thumbCount: 7,
   },
   {
-    postId: 4,
+    postId: 22,
     img: "https://picsum.photos/id/65/720/400/",
     category: "레시피",
     title: "4번",
@@ -290,7 +290,7 @@ const boardList = [
     thumbCount: 8,
   },
   {
-    postId: 5,
+    postId: 23,
     img: "https://picsum.photos/id/36/720/400/",
     category: "레시피",
     title: "5번",
@@ -303,7 +303,7 @@ const boardList = [
     thumbCount: 11,
   },
   {
-    postId: 6,
+    postId: 24,
     img: "https://picsum.photos/id/87/720/400/",
     category: "자유 게시판",
     title: "6번",
@@ -316,7 +316,7 @@ const boardList = [
     thumbCount: 15,
   },
   {
-    postId: 7,
+    postId: 25,
     img: "https://picsum.photos/id/72/720/400/",
     category: "레시피",
     title: "7번",
@@ -329,7 +329,7 @@ const boardList = [
     thumbCount: 2,
   },
   {
-    postId: 8,
+    postId: 26,
     img: "https://picsum.photos/id/4/720/400/",
     category: "칵테일 추천",
     title: "8번",
@@ -342,7 +342,7 @@ const boardList = [
     thumbCount: 0,
   },
   {
-    postId: 9,
+    postId: 27,
     img: "https://picsum.photos/id/29/720/400/",
     category: "레시피",
     title: "9번",
@@ -355,7 +355,7 @@ const boardList = [
     thumbCount: 9,
   },
   {
-    postId: 10,
+    postId: 28,
     img: "https://picsum.photos/id/27/720/400/",
     category: "레시피",
     title: "10번",
@@ -368,7 +368,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 11,
+    postId: 29,
     img: "https://picsum.photos/id/14/720/400/",
     category: "레시피",
     title: "11번",
@@ -381,7 +381,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 12,
+    postId: 30,
     img: "https://picsum.photos/id/68/720/400/",
     category: "레시피",
     title: "12번",
@@ -394,7 +394,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 13,
+    postId: 31,
     img: "https://picsum.photos/id/13/720/400/",
     category: "레시피",
     title: "13번",
@@ -407,7 +407,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 14,
+    postId: 32,
     img: "https://picsum.photos/id/14/720/400/",
     category: "레시피",
     title: "14번",
@@ -420,7 +420,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 15,
+    postId: 33,
     img: "https://picsum.photos/id/15/720/400/",
     category: "레시피",
     title: "15번",
@@ -433,7 +433,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 16,
+    postId: 34,
     img: "https://picsum.photos/id/16/720/400/",
     category: "레시피",
     title: "16번",
@@ -446,7 +446,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 17,
+    postId: 35,
     img: "https://picsum.photos/id/17/720/400/",
     category: "레시피",
     title: "17번",
@@ -459,7 +459,7 @@ const boardList = [
     thumbCount: 4,
   },
   {
-    postId: 18,
+    postId: 36,
     img: "https://picsum.photos/id/18/720/400/",
     category: "레시피",
     title: "18번",
